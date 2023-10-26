@@ -1,13 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Encuestas - 360°</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div class="container">
+      <section class="section__logo">
+        <a href="#">
+          <img src="./img/logo2.png" class="logo__info" alt="logoEncuestas" />
+        </a>
+      </section>
+      <div class="text__container">
+        <div class="text__logo">
+          <img src="./img/check.png" class="logo" alt="logo chequeo" />
+        </div>
+        <label for="identification" class="label__id">
+          <input
+            type="text"
+            id="identification"
+            class="input__id"
+            placeholder="Cédula"
+          />
+        </label>
+        <label for="password" class="label__id">
+          <input
+            type="text"
+            id="password"
+            class="input__id"
+            placeholder="Contraseña"
+          />
+        </label>
+        <div class="card">
+          <button id="counter" type="button">Ingresar</button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+    </footer>
   </body>
 </html>
